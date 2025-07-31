@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <audio preload="auto" id="musica-fundo" autoplay loop>
+    <source src="http://localhost:5500/assets/videoplayback.mp3">
+  </audio>
+  <div id="experience">
+    <canvas id="experience-canvas"></canvas>
+  </div>
+  <script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@v0.149.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.149.0/examples/jsm/"
+  }
+}
+</script>
+
+</body>
+<script type="module" src="main.js"></script>
+
+</html>
